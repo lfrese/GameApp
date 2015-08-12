@@ -1,0 +1,774 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #47c4c1;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+.DIN { font-family: DIN1451Com-Mittelschrift; }
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 960px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+    color:#fff;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+
+#login
+{
+    margin-top:30px;
+    text-align: center;
+}
+
+.error
+{
+    color:Red;
+}
+
+#logout
+{
+  position: absolute;
+  right: 16px;
+  top: 17px;
+  display: inline;
+}
+
+#settings
+{
+    border:1px solid grey;
+    float: right;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+#settings input
+{
+    margin-bottom:7px;
+}
+
+#editprize li
+{
+    list-style:none;
+    padding-bottom:10px;
+}
+#editprize li img
+{
+    max-width:140px;
+    height:auto;
+}
+
+#MainContent_gvPrizeList td
+{
+   padding:5px;
+   max-width:300px;
+}
+/** Prize Page Flair **/
+
+html, body
+{
+    margin:0;
+}
+
+body{
+margin:0;
+overflow:hidden;
+}
+#seperationlayer
+{
+    width:1920px;
+	height:1080px;
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+	position:absolute;
+}
+#gameboard{
+	width:1920px;
+	height:1080px;
+	background: #47c4c1;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	top:50%;
+	display:none;
+}
+
+#toplayer{
+    width: 0; 
+    height: 0; 
+    position:fixed;
+}
+#bottomlayer{
+     width: 0; 
+    height: 0; 
+    border-bottom: 0 solid transparent;
+}
+
+#innerboard{
+}
+
+
+#prizemelogo{
+    height:287px;
+    position:absolute;
+    width:100%;
+    top: 319px;
+}
+
+.bar
+{
+    width:1019px;
+    background: yellow;
+    height:6px;
+    position:absolute;
+    top:50%;     
+	
+}
+#topbar
+{
+     margin-top: -140px;
+     margin-left:-511.5px;      
+    left:50%; 
+}
+#bottombar
+{
+   margin-top:125px;
+   margin-right:-507.5px; 
+    right:50%;  
+}
+#prizemelogo img{
+position:absolute;
+top:50%;
+left:50%;
+width:1019px;
+height:287px;
+margin-top: -143.5px;
+margin-left:-509.5px;
+z-index:999;
+}
+
+#wanttoplay
+{
+position:absolute;
+width:518px;
+height:108px;
+top:50%;
+left:50%;
+margin-top: 90px;
+margin-left:-259px;
+z-index:999;
+}
+
+.outer{
+width:230px;
+height:230px;
+border-radius: 50%;
+display: inline-block;
+margin-right: 20px;
+.box-shadow:inset 0 0 0 3px rgba(255,255,0,0);
+}
+
+.circle{
+position:absolute;
+z-index:99;
+width:230px;
+height:230px;
+display:block;
+opacity:1;
+background-color:transparent;
+background-size: 230px 230px;
+
+}
+
+#prizeitems #top{
+text-align:center;
+padding-top: 40px;
+padding-bottom:15px;
+}
+#prizeitems #right{
+float:right;
+padding-right: 80px;
+}
+#prizeitems #right .outer, #left .outer {
+display:block;
+margin-bottom:27px;
+}
+#prizeitems #bottom{
+text-align:center;
+}
+#prizeitems #left{
+float:left;
+padding-left: 80px;
+}
+
+/*For the logo on the idle page */
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+}
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+/* Bouncing Get ready */
+
+.bounce-container
+{
+    width:932px;
+    height:254px;
+    position:absolute;
+    left:50%;
+    margin: 121px 0 0 -466px;          
+}
+
+.get-ready-container
+{
+    width:932px;
+    height:242px;
+    position:absolute;
+    top:7px;
+    left:0;
+    z-index:2;       
+}
+
+#getready
+{
+    position:absolute;
+    background:url(../Images/SiteImages/getready.png) no-repeat center center;
+    background-size:contain;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: scale(0);
+}
+
+.shadow {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  height: 20px;
+  left: -10%;
+  margin-top: -4px;
+  position: absolute;
+  top: 100%;
+  width: 120%;
+  z-index: 1;  
+   -webkit-transform: scale(0);
+}
+
+@-webkit-keyframes the-forbidden-dance {
+  0% {
+    -webkit-transform: translate3d(0, -180px, 0) scaleY(1);
+    -webkit-animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
+  80% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scaleY(0.6) scaleX(1);
+  }
+ 
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: scaleX(0.5) scaleY(0.5);
+    -webkit-animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: scaleX(1) scaleY(0.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1) scaleY(0.1);
+  }
+}
+
+#countdownlogo
+{
+    background-image:url(../Images/SiteImages/30seconds2.png);
+    width:1173px;
+    height:126px;
+    position:absolute;
+    left:50%;
+    right:50%;
+    margin-top:59px;
+    margin-left:-586.5px;
+    -webkit-transform: scale(0);
+    color:#fff;
+    font-size:58px;
+    font-family: DIN1451Com-Mittelschrift;
+    text-align:center;
+}
+.countdown
+{
+    -webkit-transform: scale(0);
+    width:396px;
+    height:220px;
+    position: absolute;
+    top:47%;
+    left:50%;
+    margin-left:-198px;
+}
+
+.countdown .bloc-time {
+  float: left;
+  text-align: center;
+}
+
+.countdown .figure {
+  position: relative;
+  float: left;
+  height: 200px;
+  width: 180px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), inset 2px 4px 0 0 rgba(255, 255, 255, 0.08);
+}
+
+.countdown .figure > span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+    font: normal 16.94em/201px "Arial";
+  font-weight: 500;
+  color: #e24844;
+}
+
+.countdown .figure .top:after, .countdown .figure .bottom-back:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.countdown .figure .top {
+  z-index: 3;
+  background-color: #f7f7f7;
+  -webkit-transform-origin: 50% 100%;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-transform: perspective(200px);
+  transform: perspective(200px);
+}
+.countdown .figure .bottom {
+  z-index: 1;
+}
+.countdown .figure .bottom:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.countdown .figure .bottom-back {
+  z-index: 2;
+  top: 0;
+  height: 50%;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.countdown .figure .bottom-back span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.countdown .figure .top, .countdown .figure .top-back {
+  height: 50%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.countdown .figure .top-back {
+  z-index: 4;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -moz-transform: perspective(200px) rotateX(180deg);
+  -ms-transform: perspective(200px) rotateX(180deg);
+  -webkit-transform: perspective(200px) rotateX(180deg);
+  transform: perspective(200px) rotateX(180deg);
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.countdown .figure .top-back span {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+#winner
+{
+    background:url(../Images/SiteImages/Winner.png) no-repeat center center;    
+    position:absolute;
+    width:1422px;
+    height:624px;
+    visibility: hidden; 
+    margin-left: -711px;
+  left: 50%; 
+  top: 200px;  
+}
+#emitter {
+  background-color: transparent;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+}
+.dot {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/*
+==============================================
+http://www.justinaguilar.com/animations/css/animations.css
+==============================================
+*/
+
+/*
+==============================================
+bigEntrance
+==============================================
+*/
+
+
+.bigEntrance{
+	animation-name: bigEntrance;
+	-webkit-animation-name: bigEntrance;	
+
+	animation-duration: 1.6s;	
+	-webkit-animation-duration: 1.6s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	visibility: visible !important;			
+}
+
+@-webkit-keyframes bigEntrance {
+	0% {
+		-webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+		opacity: 0.2;
+	}
+	30% {
+		-webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);		
+		opacity: 1;
+	}
+	45% {
+		-webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	60% {
+		-webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	75% {
+		-webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		-webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	100% {
+		-webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}				
+}
+
+
+#winnerboard
+{
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-950px;
+    width:1920px;
+	height:1080px;
+	display:none;
+}
+#congrats
+{
+    position:relative;
+    top:30px;
+    text-align:center;
+}
+#justwon
+{
+    text-align:center;
+    color:#fff;
+    font-size:65px;
+    margin-bottom:20px;
+    margin-top : 36px;
+}
+#tipimage
+{
+    float:left;    
+    position:relative;    
+    width:620px;
+    height:600px;
+}
+#claimprize
+{
+    background-image:url(../Images/SiteImages/claim.png);
+    background-repeat:no-repeat;
+    background-position:right top;
+    position:absolute;
+    background-size: 332px 332px;
+    width: 743px;
+      height: 332px;
+    z-index: 99;
+}
+#tipimage img
+{   
+    max-width: 560px;
+}
+#prizetipimg
+{
+      margin-left: 226px; 
+      position:relative;    
+}
+#tip
+{
+    background-image: url(../Images/SiteImages/bracket.png);
+    background-position:0 0;
+    background-size: 7% 100%;
+    float:left;
+    max-width:35%;
+    color:#fff;
+    font-size:32px;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 70px;
+    position: absolute;
+    left:880px;
+  top: 127px;
+}
+
+#restart
+{
+    background-image: url(../Images/SiteImages/restart.png);
+    background-repeat:no-repeat;
+    width:584px;
+    height:58px;
+    position:absolute;
+    left:50%;
+    bottom:10%;
+    margin-left:-292px;
+    bottom: 60px;
+}
+
+#tryagain
+{
+    background-image:url(../Images/SiteImages/tryagain.png);
+    background-repeat:no-repeat;
+    width:866px;
+    height:282px;
+    position:absolute;
+    top:50%;
+   left:50%;
+   margin-top:-141px;
+   margin-left:-433px;
+   visibility:hidden;
+}
+
+.timedoutentry
+{
+    animation-name: timedOutEntry;
+	-webkit-animation-name: timedOutEntry;	
+
+	animation-duration: 0.5s;	
+	-webkit-animation-duration: 0.5s;
+
+	animation-timing-function: linear;	
+	-webkit-animation-timing-function: linear;	
+
+	visibility: visible !important;	
+}
+
+@-webkit-keyframes timedOutEntry {
+	0% {
+		-webkit-transform: scale(4) rotate(6deg);
+		opacity: 0.2;
+	}
+	30% {
+		-webkit-transform: scale(3.5) rotate(-2deg);		
+		opacity: 0.4;
+	}
+	45% {
+		-webkit-transform: scale(3) rotate(1deg);
+		opacity: 0.6;
+	}
+	60% {
+		-webkit-transform: scale(2.5) rotate(-1deg);		
+		opacity: 0.8;
+	}	
+	75% {
+		-webkit-transform: scale(2) rotate(1deg);
+		opacity: 1;
+	}
+	90% {
+		-webkit-transform: scale(1.5) rotate(0deg);		
+		opacity: 1;
+	}	
+	100% {
+		-webkit-transform: scale(1) rotate(0deg);
+		opacity: 1;
+	}				
+}
+
+#noneleft{
+color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  left: 190px;
+  top: 161px;
+}
